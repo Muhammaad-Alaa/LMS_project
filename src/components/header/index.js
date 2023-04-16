@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { Component } from "react";
 import { BrowserRouter, Route, Routes,NavLink } from "react-router-dom";
 import Courses from '../AllCourses/index'
 import Course from '../course/index'
 import Edit from '../edit/index'
 import Footer from "../footer/index";
+import Exam from "../exam/index";
 export default class Header extends Component {
   render() {
     return (
@@ -103,68 +104,62 @@ export default class Header extends Component {
             </div>
           </nav>
 
-      <div className="container-fluid page-body-wrapper">
-        <div className="theme-setting-wrapper">
-          <div id="settings-trigger">
-            <i className="ti-settings"></i>
-          </div>
-          <div id="theme-settings" className="settings-panel">
-            <i className="settings-close ti-close"></i>
-            <p className="settings-heading">SIDEBAR SKINS</p>
-            <div
-              className="sidebar-bg-options selected"
-              id="sidebar-light-theme"
-            >
-              <div className="img-ss rounded-circle bg-light border mr-3"></div>
-              Light
+          <div className="container-fluid page-body-wrapper">
+            <div className="theme-setting-wrapper">
+              <div id="settings-trigger">
+                <i className="ti-settings"></i>
+              </div>
+              <div id="theme-settings" className="settings-panel">
+                <i className="settings-close ti-close"></i>
+                <p className="settings-heading">SIDEBAR SKINS</p>
+                <div
+                  className="sidebar-bg-options selected"
+                  id="sidebar-light-theme"
+                >
+                  <div className="img-ss rounded-circle bg-light border mr-3"></div>
+                  Light
+                </div>
+                <div className="sidebar-bg-options" id="sidebar-dark-theme">
+                  <div className="img-ss rounded-circle bg-dark border mr-3"></div>
+                  Dark
+                </div>
+                <p className="settings-heading mt-2">HEADER SKINS</p>
+                <div className="color-tiles mx-0 px-4">
+                  <div className="tiles success"></div>
+                  <div className="tiles warning"></div>
+                  <div className="tiles danger"></div>
+                  <div className="tiles info"></div>
+                  <div className="tiles dark"></div>
+                  <div className="tiles default"></div>
+                </div>
+              </div>
             </div>
-            <div className="sidebar-bg-options" id="sidebar-dark-theme">
-              <div className="img-ss rounded-circle bg-dark border mr-3"></div>
-              Dark
-            </div>
-            <p className="settings-heading mt-2">HEADER SKINS</p>
-            <div className="color-tiles mx-0 px-4">
-              <div className="tiles success"></div>
-              <div className="tiles warning"></div>
-              <div className="tiles danger"></div>
-              <div className="tiles info"></div>
-              <div className="tiles dark"></div>
-              <div className="tiles default"></div>
-            </div>
-          </div>
-        </div>
 
-      {isOpen && (
-          <nav className="sidebar sidebar-offcanvas" id="sidebar">
-          <ul className="nav">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                <i className="icon-grid menu-icon"></i>
-                <span className="menu-title">All courses</span>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                <i className="icon-grid menu-icon"></i>
-                <span className="menu-title">add courses</span>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/create-exame">
-                <i className="icon-grid menu-icon"></i>
-                <span className="menu-title">create exame</span>
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      )}
+            <nav className="sidebar sidebar-offcanvas" id="sidebar">
+              <ul className="nav">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/">
+                    <i className="icon-grid menu-icon"></i>
+                    <span className="menu-title">All courses</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/">
+                    <i className="icon-grid menu-icon"></i>
+                    <span className="menu-title">add courses</span>
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
 
             <div className="main-panel">
               
-              {/* <Edit/> */}
+              
               <Routes>
                 <Route path="/" element={<Courses />} />
+                <Route path="/course" element={<Course />} />
                 <Route path="/edit" element={<Edit />} />
+                <Route path="/exam" element={<Exam />} />
                 
               </Routes>
               <Footer/>
@@ -175,5 +170,3 @@ export default class Header extends Component {
     );
   }
 }
-
-export default Header
