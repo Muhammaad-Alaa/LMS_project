@@ -1,9 +1,9 @@
 import React from 'react'
 
-const creatingExame = () => {
+const createExame = () => {
   return (
-    <div>creatingkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkExame</div>
+    <div>creatingExame</div>
   )
 }
 
-export default creatingExame
+export default createExame

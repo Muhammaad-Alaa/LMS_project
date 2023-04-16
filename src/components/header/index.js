@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes,NavLink } from "react-router-dom";
 import Courses from '../AllCourses/index'
 import Edit from '../edit/index'
 import Footer from "../footer/index";
-import creatingExame from './../creatingExame/creatingExame';
+import createExame from '../creatingExame/creatingExame';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   function toggleNavbar() {
@@ -168,9 +168,10 @@ const Header = () => {
           <Routes>
             <Route path="/" element={<Courses />} />
             <Route path="/edit" element={<Edit />} />
-            <Route path="/create-exame" element={<creatingExame />} />
+            <Route path="/create-exame" element={<createExame />} />
             
           </Routes>
+        
           <Footer/>
         </div>
       </div>
