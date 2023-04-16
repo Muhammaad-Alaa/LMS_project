@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Fragment } from 'react'
+import { NavLink } from 'react-router-dom';
 export default class Courses extends Component {
   render() {
     return (
       <Fragment>
-        <section className='bg-light py-5 py-xl-8'>
+        <section className='bg-light py-5 pt-2 py-xl-8'>
           <div className="container overflow-hidden  ">
               <div className="gy-md-0">
                 <div className="text-md-start">
@@ -36,11 +37,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
                             >details
-                            </a>
+                            </NavLink>
                         </div>
                       </div>
                     </div>
@@ -58,11 +59,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
                             >details
-                            </a>
+                            </NavLink>
                         </div>
                       </div>
                     </div>
@@ -80,10 +81,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
-                            >details</a>
+                            >details
+                            </NavLink>
                           
                         </div>
                       </div>
@@ -102,10 +104,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
-                            >details</a>
+                            >details
+                            </NavLink>
                           
                         </div>
                       </div>
@@ -124,10 +127,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
-                            >details</a>
+                            >details
+                            </NavLink>
                           
                         </div>
                       </div>
@@ -146,10 +150,11 @@ export default class Courses extends Component {
                             elit. Labore, dolore voluptatum! Sunt error dicta
                             quidem!
                           </p>
-                          <a
-                            href="pages/course/course.html"
+                          <NavLink
+                            to="/course"
                             className="btn btn-primary"
-                            >details</a>
+                            >details
+                            </NavLink>
                           
                         </div>
                       </div>

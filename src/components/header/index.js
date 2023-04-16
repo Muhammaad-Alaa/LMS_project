@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes,NavLink } from "react-router-dom";
 import Courses from '../AllCourses/index'
+import Course from '../course/index'
 import Edit from '../edit/index'
 import Footer from "../footer/index";
+import Exam from "../exam/index";
 export default class Header extends Component {
   render() {
     return (
@@ -152,10 +154,12 @@ export default class Header extends Component {
 
             <div className="main-panel">
               
-              {/* <Edit/> */}
+              
               <Routes>
                 <Route path="/" element={<Courses />} />
+                <Route path="/course" element={<Course />} />
                 <Route path="/edit" element={<Edit />} />
+                <Route path="/exam" element={<Exam />} />
                 
               </Routes>
               <Footer/>
