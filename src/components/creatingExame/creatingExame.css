@@ -1,0 +1,64 @@
+.exam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .question-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .question {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  .question label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .question input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .question input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .question img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .add-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .add-question button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-question button:hover {
+    background-color: #3e8e41;
+  }
+  
