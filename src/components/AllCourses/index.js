@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Fragment } from 'react'
-export default class Courses extends Component {
-  render() {
-    return (
-      <Fragment>
+const Courses = () => {
+  return (
+    <Fragment>
         <section className='bg-light py-5 py-xl-8'>
           <div className="container overflow-hidden  ">
               <div className="gy-md-0">
@@ -160,6 +159,7 @@ export default class Courses extends Component {
             </div>
         </section>
       </Fragment>
-    )
-  }
+  )
 }
+
+export default Courses
